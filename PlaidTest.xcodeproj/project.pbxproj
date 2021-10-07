@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22FB31A374B09A05A60EF9E6 /* Pods_PlaidTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C41EA6BD2811D582B46CA62 /* Pods_PlaidTest.framework */; };
 		AD233AA9270F23B800125BC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD233AA8270F23B800125BC3 /* AppDelegate.swift */; };
 		AD233AAB270F23B800125BC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD233AAA270F23B800125BC3 /* SceneDelegate.swift */; };
 		AD233AAD270F23B800125BC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD233AAC270F23B800125BC3 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C41EA6BD2811D582B46CA62 /* Pods_PlaidTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlaidTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		788286EA6998A7E9F124403E /* Pods-PlaidTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaidTest.debug.xcconfig"; path = "Target Support Files/Pods-PlaidTest/Pods-PlaidTest.debug.xcconfig"; sourceTree = "<group>"; };
 		AD233AA5270F23B800125BC3 /* PlaidTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaidTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD233AA8270F23B800125BC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD233AAA270F23B800125BC3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		AD233AB1270F23BA00125BC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD233AB4270F23BA00125BC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD233AB6270F23BA00125BC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA1D55876C05B2D9170F046D /* Pods-PlaidTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaidTest.release.xcconfig"; path = "Target Support Files/Pods-PlaidTest/Pods-PlaidTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22FB31A374B09A05A60EF9E6 /* Pods_PlaidTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		201005D021F5F15FD4A71C6C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				788286EA6998A7E9F124403E /* Pods-PlaidTest.debug.xcconfig */,
+				CA1D55876C05B2D9170F046D /* Pods-PlaidTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		653C2ECEA9CCF8BC684336BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C41EA6BD2811D582B46CA62 /* Pods_PlaidTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AD233A9C270F23B800125BC3 = {
 			isa = PBXGroup;
 			children = (
 				AD233AA7270F23B800125BC3 /* PlaidTest */,
 				AD233AA6270F23B800125BC3 /* Products */,
+				201005D021F5F15FD4A71C6C /* Pods */,
+				653C2ECEA9CCF8BC684336BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD233AB9270F23BA00125BC3 /* Build configuration list for PBXNativeTarget "PlaidTest" */;
 			buildPhases = (
+				529F998703B958B41921BCED /* [CP] Check Pods Manifest.lock */,
 				AD233AA1270F23B800125BC3 /* Sources */,
 				AD233AA2270F23B800125BC3 /* Frameworks */,
 				AD233AA3270F23B800125BC3 /* Resources */,
+				600476C19A9E68B5D10BC8D5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		529F998703B958B41921BCED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlaidTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		600476C19A9E68B5D10BC8D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlaidTest/Pods-PlaidTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlaidTest/Pods-PlaidTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlaidTest/Pods-PlaidTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AD233AA1270F23B800125BC3 /* Sources */ = {
@@ -284,12 +352,13 @@
 		};
 		AD233ABA270F23BA00125BC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 788286EA6998A7E9F124403E /* Pods-PlaidTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CS73H95RB8;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PlaidTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -312,12 +381,13 @@
 		};
 		AD233ABB270F23BA00125BC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA1D55876C05B2D9170F046D /* Pods-PlaidTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CS73H95RB8;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PlaidTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
